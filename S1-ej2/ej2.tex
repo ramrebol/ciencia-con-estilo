@@ -1,0 +1,129 @@
+\documentclass[11pt]{article}
+\usepackage[spanish]{babel}
+\usepackage{fancybox}
+
+\usepackage{geometry}
+\geometry{
+  letterpaper,
+  total={216mm,279mm},
+  left=20mm,
+  right=20mm,
+  top=20mm,
+  bottom=40mm
+}
+
+% \usepackage{graphicx} 
+
+\usepackage{amsmath,amssymb,amsfonts,amssymb}                          
+\usepackage{dsfont}
+\usepackage{multicol}
+\usepackage{xcolor}
+\usepackage{enumerate}
+
+
+\parindent=0cm                                  
+
+\newcommand{\ds}{\displaystyle}
+
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\NN}{\mathbb{N}}
+
+\everymath{\displaystyle}
+
+\begin{document}
+\thispagestyle{empty}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+UNIVERSIDAD DE CONCEPCI\'ON
+\\
+\textbf{\small FACULTAD DE INGENIER\'IA AGR\'ICOLA}
+\\
+DEPARTAMENTO DE AGROINDUSTRIAS\\
+\rule{16cm}{.5pt}
+%  \renewcommand{\theenumi}{\Roman{enumi}}
+% \renewcommand{\theenumii}{\arabic{enumi}.\arabic{enumii}}
+% 
+% \renewcommand{\theenumiii}{\arabic{enumi}.\arabic{enumii}.\arabic{enumiii}}
+
+\vspace{0.5cm}
+
+\begin{center}
+  \textbf{Listado 6: Integrales impropias}
+  \\
+  \textsc{C\'alculo II}
+\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{enumerate}
+
+\item Estudie la convergencia de las siguientes integrales:
+  \begin{multicols}{2}
+    \begin{enumerate}
+    \item \textcolor{red}{HACER}
+    \item  $\int_{1}^{2} \frac{1}{x \ln(x)} \,dx$
+    \item {\bf (P)}$\int_{3}^{4} \frac{1}{(x-4)^2} \,dx$
+    \item $\int_{0}^{1} \frac{1}{(1-x)^2} \,dx$
+    \end{enumerate}
+  \end{multicols}
+  \textcolor{red}{Haga que los items que aparecen en el Problema 1 se
+  visualicen en s\'olo una fila.}
+
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+\item Usando el Teorema Criterio de Comparaci\'on directa, estudie la
+  convergencia de las siguientes integrales:
+  \begin{multicols}{2}
+    \begin{enumerate}
+    \item $\int_{1}^{5}\frac{1}{\sqrt{x^4-1}}\, dx$
+    \item {\bf (P)} $\int_{3}^{6} \frac{\ln(x)}{(x-3)^4} \,dx$
+    \item {\bf (P)} $\int_{1}^{\infty}\frac{1}{e^{x}+x^{2}}\,dx$
+    \item $\int_{1}^{\infty} \frac{1}{xe^{x}} \,dx$
+    \item $\int_{1}^{\infty}\frac{1}{\sqrt{x^{3}+1}}\,dx$
+    \item \textcolor{red}{HACER}
+    \end{enumerate}
+  \end{multicols}
+
+  % ----------------------------------------------------------------------------
+
+\item Usando el Teorema Criterio de Comparaci\'on al L\'imite, estudie la
+  convergencia de las siguientes integrales:
+  \begin{multicols}{4}
+    \begin{enumerate}
+    \item {\bf (P)}$\int_{1}^{\infty}\frac{x+1}{x^3+4}\, dx$
+    \item $\int_{0}^{\pi/4}\frac{\sin(x)}{x^{2}}dx$
+    \item $\int_{1}^{\infty}\frac{3}{e^{x}+5}dx$
+    \item $\int_{1}^{\infty}\frac{1}{e^{x}+1}\, dx$ 
+    \end{enumerate}
+  \end{multicols}
+
+\item Muchas integrales se pueden calcular haciendo uso de la Funci\'on Gamma.
+  Por ejemplo, se puede probar que:
+  \begin{itemize}
+  \item \textcolor{red}{HACER}
+  \item $\int_{0}^{\infty}\frac{x^{p-1}}{1+x}\,dx
+    =\Gamma(p)\Gamma(1-p)=\frac{\pi}{\sin(p\pi)}$, $ \quad 0<p<1$
+  \end{itemize}
+
+  Calcule el valor de las siguientes integrales usando la Funci\'on Gamma:
+  \begin{multicols}{3}
+    \begin{enumerate}
+    \item {\bf (P)}$\int_{0}^{\pi/2}\sin^{6}(\theta)d\theta$
+    \item $\int_{0}^{\pi/2}\sin^{4}(\theta)\cos^{5}(\theta)d\theta$
+    \item $\int_{0}^{\infty}\frac{1}{1+x^{4}}dx$
+    \end{enumerate}
+  \end{multicols}
+  \textcolor{red}{Defina un nuevo comando para que aparezca
+    $\operatorname{\sen}$ en vez de $\sin$.}
+
+
+  % 
+\end{enumerate}
+
+
+\vfill
+\hrule
+\vspace{4px}
+\noindent RRC. \\
+\'Ultima edici\'on de este documento: \today
+
+\end{document}

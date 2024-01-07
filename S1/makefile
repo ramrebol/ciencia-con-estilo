@@ -1,0 +1,24 @@
+SHELL=/bin/bash
+PROJECT=S1
+PDF=pdflatex -shell-escape -synctex=1
+BUILDPDF=$(PDF) $(PROJECT).tex
+RM={log,bak,aux,bbl,blg,idx,toc,out,snm,nav,synctex.gz,vrb}
+
+all:
+	$(BUILDPDF)
+
+bib:
+	$(BUILDPDF)
+	bibtex $(PROJECT).aux
+	$(BUILDPDF)
+	$(BUILDPDF)
+
+clean:
+	rm -f ${PROJECT}.${RM}
+	rm -r _minted-${PROJECT}
+
+clean-all:
+	rm -f ${PROJECT}.${RM}
+	rm -f ${PROJECT}.{dvi,ps,eps,pdf} *~
+	rm -r _minted-${PROJECT}
+

@@ -1,0 +1,232 @@
+\documentclass[11pt]{article}
+\usepackage[spanish]{babel}
+\usepackage{amsmath,amssymb,amsfonts,mathtools}
+
+\usepackage{geometry}
+\geometry{
+  letterpaper,
+  total={216mm,279mm},
+  left=20mm,
+  right=20mm,
+  top=20mm,
+  bottom=40mm
+}
+
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{hyperref}
+
+\parindent=0pc
+
+\newcommand{\ds}{\displaystyle}
+
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\NN}{\mathbb{N}}
+
+\newcommand{\ihat}{\hat{\imath}}
+\newcommand{\jhat}{\hat{\jmath}}
+\newcommand{\khat}{\hat{k}}
+
+
+%\newcommand{\ihat}{\boldsymbol{\hat{\textbf{\i}}}}
+%\newcommand{\jhat}{\boldsymbol{\hat{\textbf{\j}}}}
+
+\begin{document}
+\noindent
+
+UNIVERSIDAD DE CONCEPCI\'ON
+\\
+\textbf{\small FACULTAD DE INGENIER\'IA AGR\'ICOLA}
+\\
+DEPARTAMENTO DE AGROINDUSTRIAS\\
+\rule{16cm}{.5pt}
+% \renewcommand{\theenumi}{\Roman{enumi}}
+% \renewcommand{\theenumii}{\arabic{enumi}.\arabic{enumii}}
+% 
+% \renewcommand{\theenumiii}{\arabic{enumi}.\arabic{enumii}.\arabic{enumiii}}
+% {\usecounter{enumi}}
+% \boldmath
+
+\vspace{0.5cm}
+
+\begin{center}
+  \textbf{Listado 3: Sistemas de ecuaciones}
+  \\
+  \textsc{\'Algebra Lineal}
+\end{center}
+
+% ------------------------------------------------------------------------------
+
+\begin{enumerate}
+
+\item Escriba los siguientes sistemas de ecuaciones en
+  forma matricial y resu\'elvalos utilizando el m\'etodo de eliminaci\'on
+  de Gauss.
+  \begin{multicols}{2}
+    \begin{enumerate}
+    \item
+      $\left\{
+        \begin{array}{rcl}
+          -x_{1}+x_{3}+2x_{4}        & =&1\\
+          x_{1}-x_{2}+x_{3}-2x_{4}     &  =&-1\\
+          -x_{1}-2x_{2}+x_{3}+3x_{4}   &  =&2\\
+          -x_{1}-4x_{2}+2x_{3}+4x_{4}  &  =&5
+        \end{array}
+      \right.
+      $
+    \item
+      \textcolor{red}{COMPLETAR}
+    \end{enumerate}
+  \end{multicols}
+
+  % ----------------------------------------------------------------------------
+  
+\item Considere $A$ y $\vec{b}$, matrices y vector de coeficiente reales,
+  respectivamente, definidos por
+  \[
+    A=
+    \begin{pmatrix}
+      -a & 2 & 0 & 1\\
+      a & -3 & 2 & -1\\
+      a & -2 & -1 & 1\\
+      2a & -2 & -4 & b
+    \end{pmatrix}
+    \quad
+    \text{ y }
+    \quad
+    \vec{b}=
+    \begin{pmatrix}
+      1\\
+      -2\\
+      -1\\
+      a+b+2
+    \end{pmatrix}
+  \]
+  
+  \begin{enumerate}
+  \item Determine los valores de $a$ y$b$ para los cuales el sistema
+    $A\vec{x}=b$, con $\vec{x}\in\RR^3$, sea compatible determinado,
+    compatible indeterminado, o indeterminado.
+    
+  \item Para $a=1$ y $b=-1$, encuentre las soluciones del sistema.
+  \end{enumerate}
+  
+  % ----------------------------------------------------------------------------
+  
+\item Considere el sistema de ecuaciones%
+  \\ \\
+  
+  \textcolor{red}{COMPLETAR}
+  \\ \\
+  
+  Encuentre el o los valores de $a\in\RR$ tales que el sistema sea
+  compatible determinado. En cada uno de los casos, encuentre la soluci\'on
+  de este sistema.
+
+\item Sean $\alpha,\beta\in\RR$.
+  Considere el sistema de ecuaciones de incógnitas $x,y,z\in\RR$
+  % 
+  \begin{align*}
+    x+y+\alpha z  &  =0\\
+    x+y+\beta z  &  =0\\
+    \alpha x+\beta y+z  &  =0
+  \end{align*}
+  
+  
+  \begin{enumerate}
+  \item Determine $\alpha$ y $\beta$ tales que la soluci\'on de este sistema de
+    ecuaciones sea \'unica. ?`Cu\'al es dicha soluci\'on?
+    
+  \item Determine $\alpha$ y $\beta$ tales que el sistema tenga soluci\'on no
+    trivial, y su respectivo conjunto soluci\'on.
+  \end{enumerate}
+  
+  
+  
+\item Encuentre los valores de $\alpha,\beta,k\in\RR$ para que
+  el sistema de ecuaciones
+  \\ \\
+  
+  \textcolor{red}{COMPLETAR}
+          
+  \begin{enumerate}
+  \item Tenga soluci\'on \'unica
+    
+  \item Sea incompatible
+  \end{enumerate}
+  
+  
+\item Sean $\alpha,\beta\in\RR$. Considere el siguiente sistema de
+  ecuaciones.
+  \\ \\
+  \textcolor{red}{COMPLETAR}
+  
+  
+  
+  
+  \begin{enumerate}
+  \item Determine el o los valores de $\alpha$ y $\beta$ tales que este sistema
+    de ecuaciones sea compatible determinado, compatible indeterminado
+    o incompatible
+    
+  \item Para $\alpha=1$ y $\beta=2$, determine el conjunto soluci\'on.
+  \end{enumerate}
+  
+\item Considere los puntos $A=(-1,0,1)$,
+  $B=(0,1,2)$
+  y
+  $C=(1,1,1)$, y los vectores
+  $\vec{a}=\overrightarrow{OA}$,
+  $\vec{b}=\overrightarrow{OA}$ y
+  $\vec{c}=\overrightarrow{OC}$,
+  donde $O=(0,0,0)$.
+
+  \begin{enumerate}
+  \item Calcule $d(A,B)  $, $d(A,C)$,
+    $d(B,C)  $, $\|\vec{a}\| $, $\|\vec{b}\|$, $\|\vec{c}\|$,
+    $\left(  2\vec{a}\right)
+    \cdot\vec{b}$, $\left(  -\vec{b}\right)  \times\vec{c}$
+    y $\vec{b}\cdot\left(\vec{c}\times\vec{a}\right)  $.
+    
+  \item Determine los \'angulos entre $\vec{a}$, $\vec{b}$ y $\vec{c}$.
+    
+  \item Describa el conjunto de los vectores $\vec{x}\in\RR^3$
+    tales que
+    %
+    \begin{enumerate}
+    \item $\vec{x}$ es paralelo a $\vec{c}$ y $\|\vec{x}\|=1$.
+    \item $\vec{x}$ es perpendicular a $\vec{a}$ y $\vec{c}$.
+    \item $\|\vec{x}-\vec{a}\| =\|\vec{x}-\vec{b}\|$.
+    \end{enumerate}
+    
+  \end{enumerate}
+  
+\item Determine un vector $\vec{r}\in\RR^3$ tal que
+  %
+  \begin{enumerate}
+  \item $\left\Vert \vec{r}\right\Vert =4$, el \'angulo entre $\vec{r}$ e
+    $\ihat$ es de $\dfrac{\pi}{4}$ y el \'angulo entre $\vec{r}$
+    y $\jhat$ es de $\dfrac{\pi}{3}$.
+    
+  \item $\vec{r}$ es perpendicular a $\left[  1,2,2\right]  $,
+    el \'angulo entre $\vec{r}$ e $\ihat$ es de
+    $\dfrac{\pi}{6}$ y el \'angulo entre $\vec{r}$ y $\khat$
+    es de $\pi$ .
+    
+  \item $\vec{r}$ es paralelo a $\left[  0,-1,2\right]  $, el \'angulo entre
+    $\vec{r}$ e $\ihat$ es de $\dfrac{\pi}{2}$ y el \'angulo
+    entre $\vec{r}$ y $\khat$ es de $\pi$ .
+  \end{enumerate}
+  
+\end{enumerate}
+
+
+\vfill
+\hrule
+\vspace{4px}
+Ramiro Rebolledo Cormack\\
+\'Ultima edici\'on de este documento: \today
+        
+\end{document}

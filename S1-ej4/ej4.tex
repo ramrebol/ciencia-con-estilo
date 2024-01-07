@@ -1,0 +1,133 @@
+\documentclass{article}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{cancel}
+\usepackage{amsmath, amsthm, amssymb}
+\usepackage{color}
+%\usepackage{multicol}
+%\usepackage{amsfonts}
+
+\pgfplotsset{compat=1.18}
+
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\II}{\mathbb{I}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\PP}{\mathbb{P}}
+
+\begin{document}
+\title{Gr\'afico de polinomios cuadr\'aticos (par\'abolas)}
+\author{Ramiro Rebolledo}
+\date{\today}
+\maketitle
+
+\section{Objetivos de la unidad}
+\begin{itemize}
+\item Dibujar gr\'aficos de polinomios cuadr\'aticos (par\'abolas)
+  en el plano cartesiano.
+\item Calcular y comprender gr\'aficamente las intersecciones del polinomio
+  cuadr\'atico con el eje $X$ (sus ra\'ices o ceros).
+\item Determinar gr\'aficamente los intervalos donde el polinomio
+  cuadr\'atico es positivo y los intervalos donde es negativo.
+\item Decidir a partir de la ecuaci\'on cuadr\'atica cuando su gr\'afica es
+  c\'oncava hacia arriba y cuando es c\'oncaba hacia abajo.
+\end{itemize}
+
+\section{Definici\'on de polinomio cuadr\'atico}
+Un polinomio cuadr\'atico se define como
+\[
+  p(x) = \textcolor{red}{a}x^2 + bx + c,
+\]
+donde $a$, $b$, y $c$ son constantes con $\textcolor{red}{a \neq 0}$. 
+Cuando $a = 0$, la ecuaci\'on corresponde a un polinomio lineal.
+
+\begin{itemize}
+\item $a$, $b$ y $c$ se denominan \textbf{coeficientes} del polinomio.
+\item Los coeficientes del polinomio son \textbf{independientes}
+  de la variable.
+\item $\textcolor{red}{a}$ se denomina \textbf{coeficiente principal},
+  y determina el \textbf{grado} del polinomio.
+\item $c$ se denomina \textbf{t\'ermino libre}.
+\end{itemize}
+
+\noindent
+\textbf{Observaci\'on:}
+Cuando $a=0$, la ecuaci\'on corresponde a un polinomio lineal
+(polinomio de primer grado).
+Por este motivo, excluimos este caso del an\'alisis.
+
+\medskip
+
+\noindent
+\textbf{Ejemplos:}
+Ejemplos de polinomios de segundo grado.
+\begin{itemize}
+\item $p(x)=ax^2+bx+c$, donde $a$, $b$ son constantes y $a\neq 0$.
+\item $p(x)=2x^2+x+1$
+\item $p(x)=1+x+2x^2$
+\item $f(x)=0.7x^2-12.3x+\dfrac{3}{2}$
+\item $p(w)=-3w^2$
+\item $p(x)=-x-3x^2$
+\item $p(t)=2t^2+t+1$
+\item $p(t)=3+5t-7t^2$
+\item $y(t)=y_0+v_{0y}t+\dfrac{1}{2}gt^2$, donde $y_0$, $v_{0y}$ y $g$
+  son constantes.
+\item $p(x)=x^2+\dfrac{2}{x}+1$ \textbf{no es un polinomio}.
+\item $p(x)=\dfrac{1}{x^2+2x+1}$ \textbf{no es un polinomio}.
+\end{itemize}
+
+
+
+\section{Gr\'afico de polinomios cuadr\'aticos}
+
+Analizaremos el gr\'afico del polinomio
+\[
+  p(x)=\textcolor{red}{a}x^2+bx+c\,,
+\]
+donde \textcolor{red}{$a\neq 0$}.
+
+Sabemos que
+\[
+  \boxed{ax^2+bx+c=0}
+  \qquad\Leftrightarrow\qquad
+  \boxed{x=\dfrac{-b\pm\sqrt{\textcolor{brown}{b^2-4ac}}}{2a}}
+\]
+lo que gr\'aficamente quiere decir que, cuando
+\textcolor{brown}{$b^2-4ac\geq 0$},
+el polinomio interseca al eje $X$ en los puntos con abcisa
+\[
+  x_1=\dfrac{-b\textcolor{red}{-}\sqrt{b^2-4ac}}{2a}
+  \quad\text{ y }\quad
+  x_2=\dfrac{-b\textcolor{red}{+}\sqrt{b^2-4ac}}{2a}
+\]
+
+
+
+
+
+    
+
+\subsection{Ceros o ra\'ices de polinomios cuadr\'aticos}
+Las ra\'ices de un polinomio cuadr\'atico $p(x) = ax^2 + bx + c$, con
+$a\neq 0$, son
+\[x_1 = \frac{-b - \sqrt{b^2 - 4ac}}{2a}\]
+y
+\[x_2 = \frac{-b + \sqrt{b^2 - 4ac}}{2a}.\]
+
+\subsection{Concavidad}
+La concavidad de la gr\'afica de un polinomio cuadr\'atico depende del signo
+de $a$. Si $a > 0$, la par\'abola es c\'oncava hacia arriba, y si $a < 0$,
+la par\'abola es c\'oncava hacia abajo.
+M\'as informaci\'on, puede revisar el libro \cite{Z08}.
+
+
+\bibliographystyle{plain}
+\bibliography{bibliografia}
+
+
+\end{document}
+

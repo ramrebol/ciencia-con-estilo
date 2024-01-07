@@ -1,0 +1,25 @@
+#  -  Ramiro Rebolledo Cormack
+#  -  ramrebol@gmail.com
+#  -  30/08/2018
+#
+SHELL=/bin/bash
+PROJECT=ej5
+PDF=pdflatex -synctex=1
+BUILDPDF=$(PDF) $(PROJECT).tex
+RM={log,bak,aux,bbl,blg,idx,toc,out,snm,nav,synctex.gz}
+
+all:
+	$(BUILDPDF)
+
+bib:
+	$(BUILDPDF)
+	bibtex $(PROJECT).aux
+	$(BUILDPDF)
+	$(BUILDPDF)
+
+clean:
+	rm -f ${PROJECT}.${RM} *~
+
+clean-all:
+	rm -f ${PROJECT}.${RM}
+	rm -f ${PROJECT}.{dvi,ps,eps,pdf} *~
